@@ -14,10 +14,16 @@ int main(){
     else if(b>a && b>c){
         cout<<"B is Larger";
     }
-        else {
+        else if(c>a && c>b){
             cout<<"C is Larger";
         }
-    
+        else if(a==b && a==c && b==c){
+            cout<<"All are Equal";
+        }
+        else{
+            cout<<"Invalid Input";
+        }
+
     return 0;
 
 }

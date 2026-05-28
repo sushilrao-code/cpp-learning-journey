@@ -9,6 +9,7 @@ int main(){
     // cout<<x*y;
    cout <<"Enter  value x\n"<< "Enter value y\n";
     cin>>x>>y;
-    cout<<x*y;
+    cout<<x*y<<"\n";
+    cout<<x%y;
     return 0;
 }

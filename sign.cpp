@@ -10,7 +10,11 @@ int main(){
     else if(n<=0){
         cout<<"Negative";
     }
-    else {
+    else if(n==0){
+        cout<<"Zero";
+    }
+
+        else{
         cout<<"Invalide input";
 
     }
