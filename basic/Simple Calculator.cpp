@@ -1,36 +1,42 @@
+//! Simple Calculator
+/*2 numbers
+
+1 operator (+ - * /)
+Result print kar*/
 #include <iostream>
 using namespace std;
 int main()
 {
-    double a, b;
+    float num1, num2;
     char op;
-    cout << "Enter Your Fist Number: ";
-    cin >> a;
-    cout << "Enter Your Opertor (+,-,*,/): ";
+   
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter operator (+, -, *, /): ";
     cin >> op;
-    cout << "Enter Your Seconde Number: ";
-    cin >> b;
-
-    switch (op)
+    cout << "Enter second number: ";
+    cin >> num2;
+ float a = num1;
+    float b = num2;
+    if (op == '+')
     {
-    case '+':
-        cout << a << " + " << b << " = "<< a + b;
-        break;
-    case '-':
-        cout << a << " - " << b << " = " << a - b;
-        break;
-    case '*':
-        cout << a << " * " << b << " = " << a * b;
-        break;
-    case '/':
-    if(b !=0)
-        cout << a << " / " << b << " = " << a / b;
-        else
-        cout<<"Error!";
-        break;
-    default:
-        cout << "Invalid Input";
-        break;
+        cout << a + b;
+    }
+    else if (op == '-')
+    {
+        cout << a - b;
+    }
+    else if (op == '/')
+    {
+        cout << a / b;
+    }
+    else if (op == '*')
+    {
+        cout << a * b;
+    }
+    else
+    {
+        cout << "Invalid out put";
     }
 
     return 0;
